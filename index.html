@@ -2,10 +2,17 @@
 <html>
 
 <head>
-    <title>Portfolio</title>
+    <title>Smilin Jasper</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_ycwAeB8XzfSDDb3EvRQIt");
+        })();
+    </script>
+    <script defer type="text/javascript" src="assets/js/email_js_service.js"></script>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
@@ -33,7 +40,6 @@
         <nav id="nav">
             <ul class="links">
                 <li class="active"><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
             </ul>
             <ul class="icons">
                 <li><a target="_blank" href="https://www.linkedin.com/in/smilin-jasper-366b28200/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -97,6 +103,31 @@
 
         <!-- Footer -->
         <footer id="footer">
+
+            <!-- Contact Form -->
+            <section>
+                <form id="contact-form" method="post">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="from_name">Name</label>
+                            <input type="text" name="from_name" id="from_name" />
+                        </div>
+                        <div class="field">
+                            <label for="from_email">Email</label>
+                            <input type="text" name="from_email" id="from_email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" /></li>
+                    </ul>
+                </form>
+            </section>
+
+            <!-- Contact Info -->
             <section class="split contact">
                 <section>
                     <h3>Phone</h3>
