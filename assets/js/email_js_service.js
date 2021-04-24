@@ -5,9 +5,9 @@ window.onload = function() {
         // these IDs from the previous steps
         emailjs.sendForm('service_smilin_portfolio', 'template_2091tws', this)
             .then(function() {
-                alert("Email Sent!")
+                alert("Email Sent! I will get back to you soon")
             }, function() {
-                alert("Failed to send email, report issue to page owner");
+                alert("Failed to send email, report issue to me please");
             });
     });
 }
